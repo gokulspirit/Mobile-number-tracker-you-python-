@@ -19,3 +19,6 @@ for (x, y, w, h) in faces:
 # Save the result image
 cv2.imwrite('face_detected.png', img)
 print("Successfully saved face_detected.png")
+cv2.imshow('Detected Faces', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
